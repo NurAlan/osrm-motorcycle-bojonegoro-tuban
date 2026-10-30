@@ -1,0 +1,14 @@
+services:
+  osrm:
+    image: osrm-motorcycle-router:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        OSM_PBF_URL: https://download.geofabrik.de/asia/indonesia/java-261029.osm.pbf
+        OSM_PBF_MD5_URL: https://download.geofabrik.de/asia/indonesia/java-261029.osm.pbf.md5
+        OSM_PBF_FILENAME: java-261029.osm.pbf
+        REGION_BBOX: 111.25,-7.65,112.55,-6.45
+    restart: unless-stopped
+    ports:
+      - "5001:5000"

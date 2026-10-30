@@ -1,0 +1,8 @@
+**
+!Dockerfile
+!compose.yaml
+!LICENSE
+!LICENSE.OSRM
+!THIRD_PARTY_NOTICES.md
+!profiles/
+!profiles/motorcycle.lua

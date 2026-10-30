@@ -1,0 +1,13 @@
+# OSM extracts, generated graph files and image archives
+data/
+*.osm.pbf
+*.osrm*
+!LICENSE.OSRM
+*.tar
+*.tar.gz
+
+# Python cache and local configuration
+__pycache__/
+*.py[cod]
+.env
+.DS_Store
